@@ -65,6 +65,7 @@ namespace Navegador {
 			this->webBrowser1->Name = L"webBrowser1";
 			this->webBrowser1->Size = System::Drawing::Size(1008, 729);
 			this->webBrowser1->TabIndex = 0;
+			this->webBrowser1->Url = (gcnew System::Uri(L"https://www.google.com/", System::UriKind::Absolute));
 			// 
 			// toolStrip1
 			// 
