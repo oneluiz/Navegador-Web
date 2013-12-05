@@ -36,6 +36,7 @@ namespace Navegador {
 		}
 	private: System::Windows::Forms::WebBrowser^  webBrowser1;
 	private: System::Windows::Forms::ToolStrip^  toolStrip1;
+
 	protected: 
 
 	private:
@@ -62,22 +63,23 @@ namespace Navegador {
 			this->webBrowser1->Location = System::Drawing::Point(0, 0);
 			this->webBrowser1->MinimumSize = System::Drawing::Size(20, 20);
 			this->webBrowser1->Name = L"webBrowser1";
-			this->webBrowser1->Size = System::Drawing::Size(681, 498);
+			this->webBrowser1->Size = System::Drawing::Size(1008, 729);
 			this->webBrowser1->TabIndex = 0;
 			// 
 			// toolStrip1
 			// 
 			this->toolStrip1->Location = System::Drawing::Point(0, 0);
 			this->toolStrip1->Name = L"toolStrip1";
-			this->toolStrip1->Size = System::Drawing::Size(681, 25);
+			this->toolStrip1->RenderMode = System::Windows::Forms::ToolStripRenderMode::System;
+			this->toolStrip1->Size = System::Drawing::Size(1008, 25);
 			this->toolStrip1->TabIndex = 1;
-			this->toolStrip1->Text = L"toolStrip1";
+			this->toolStrip1->Text = L"Barra Herramientas";
 			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(681, 498);
+			this->ClientSize = System::Drawing::Size(1008, 729);
 			this->Controls->Add(this->toolStrip1);
 			this->Controls->Add(this->webBrowser1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"$this.Icon")));
